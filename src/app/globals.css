@@ -1,8 +1,36 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --text-color: #ffff;
+  --desc-color: #D1D5DC;
+  --blue-color: #1447E6;
+  --bg-gray-color: #1E2939;
+  --gradient: linear-gradient(to right, #3A7EFF, #AB49FF);
 }
 
+@font-face {
+  font-family: 'Tanha';
+  src: url('/fonts/Tanha/Tanha.woff2') format('woff2'),
+    url('/fonts/Tanha/Tanha.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+body {
+  color: var(--text-color);
+  font-family: 'Tanha', sans-serif;
+}
+
+.button {
+  outline: none;
+  color: var(--desc-color);
+  font-size: medium;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hover:hover {
+  opacity: .7;
+}
