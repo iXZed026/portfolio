@@ -19,6 +19,7 @@
 body {
   color: var(--text-color);
   font-family: 'Tanha', sans-serif;
+  direction: rtl;
 }
 
 .button {
