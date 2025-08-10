@@ -15,7 +15,7 @@ function HumbMenu() {
     return (
         <>
             <div
-                className="flex flex-col justify-center items-center w-5 z-3 cursor-pointer md:hidden relative"
+                className="flex flex-col justify-center items-center w-5 z-3 cursor-pointer md:hidden relative hover:opacity-75 hover:transition-all"
                 onClick={activeHumbHandle}
                 ref={humbRef}
             >
