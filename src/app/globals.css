@@ -35,3 +35,94 @@ body {
 .hover:hover {
   opacity: .7;
 }
+
+/* NAVBAR */
+
+header {
+  animation: headerAni 1s ease-in-out 1;
+}
+
+.list-item:hover {
+  color: oklch(88.2% 0.059 254.128);
+  transition: .35s;
+  transform: translate(0, -2px);
+}
+
+
+.active-link {
+  border-bottom: 3px solid var(--blue-color);
+}
+
+.humburger-line {
+  position: absolute;
+  height: 3px;
+  animation: humburgerLineAni .2s ease 1 alternate;
+}
+
+.humburger-line:first-child {
+  transform: rotate(45deg);
+}
+
+.humburger-line:last-child {
+  transform: rotate(-45deg);
+}
+
+@keyframes headerAni {
+  0% {
+    transform: translate(0, -100px);
+    opacity: .1;
+  }
+}
+
+@keyframes activeNavAni {
+  0% {
+    top: -500px;
+  }
+}
+
+@keyframes inactiveNavAni {
+  0% {
+    top: 0;
+    display: block;
+  }
+
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes humburgerLineAni {
+  0% {
+    transform: rotate(0);
+  }
+}
+
+@media screen and (max-width:768) {
+
+  nav {
+    display: none;
+  }
+
+  .active-nav {
+    width: 100%;
+    padding: 50px;
+    background-color: #101828;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    animation: activeNavAni .35s ease-in-out 1;
+  }
+
+  .inactive-nav {
+    width: 100%;
+    padding: 50px;
+    background-color: #101828;
+    position: fixed;
+    top: -500px;
+    right: 0;
+    animation: inactiveNavAni .35s ease-in-out 1;
+  }
+
+}
