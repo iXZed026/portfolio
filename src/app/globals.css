@@ -4,6 +4,7 @@
   --text-color: #ffff;
   --desc-color: #D1D5DC;
   --blue-color: #1447E6;
+  --blue-color2: #51A2FF;
   --bg-gray-color: #1E2939;
   --gradient: linear-gradient(to right, #3A7EFF, #AB49FF);
 }
@@ -34,6 +35,16 @@ body {
 
 .hover:hover {
   opacity: .7;
+  transition: .35s;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  opacity: .7;
+  transition: .35s;
 }
 
 /* NAVBAR */
@@ -123,6 +134,95 @@ header {
     top: -500px;
     right: 0;
     animation: inactiveNavAni .35s ease-in-out 1;
+  }
+
+}
+
+/* HERO */
+
+.hero-image-baner {
+  position: absolute;
+  background-color: var(--bg-gray-color);
+  bottom: -10px;
+  right: -10px;
+  border: 1px solid var(--blue-color);
+  border-radius: 5px;
+  color: var(--blue-color2);
+  font-weight: 300;
+  animation: heroImageBanerAni 2s linear infinite alternate;
+}
+
+.typewriter {
+  padding: 0 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-left: 1px solid #fff;
+  animation: blink 1s step-end infinite;
+}
+
+.hero-right-section {
+  animation: heroRightAni 1s ease 1;
+}
+
+.hero-image{
+  animation: heroLeftAni 1s ease 1;
+}
+
+@keyframes heroImageBanerAni {
+  0% {
+    bottom: 3px;
+    box-shadow: 0 0 6px rgb(0, 0, 255);
+  }
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: white;
+  }
+}
+
+@keyframes heroRightAni {
+  0%{
+    transform: translate(-20,10);
+    opacity: 0
+  }
+}
+
+@keyframes heroLeftAni {
+  0%{
+    opacity: 0;
+    padding: 20%;
+  }
+}
+
+/* UTILITIES */
+
+@layer utilities {
+
+  .start-screen {
+    @apply flex justify-start items-center;
+  }
+
+  .center-screen {
+    @apply flex justify-center items-center;
+  }
+
+  .between-screen {
+    @apply flex justify-between items-center;
+  }
+
+  .end-screen {
+    @apply flex justify-end items-center;
+  }
+
+  .bg-page {
+    @apply min-h-screen w-full bg-gradient-to-br from-gray-900 via-gray-800 to-black;
   }
 
 }
