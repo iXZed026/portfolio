@@ -6,7 +6,7 @@ function NavBar({ children }: ChildrenProps) {
 
     const headerRef = useRef<HTMLDivElement | null>(null)
 
-    const headerStyle = "w-full fixed py-4"
+    const headerStyle = "w-full fixed py-4 z-50"
 
     useEffect(() => {
 
