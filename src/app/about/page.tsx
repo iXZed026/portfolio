@@ -8,32 +8,36 @@ import React from 'react'
 
 function About() {
     return (
-        <div className='bg-page center-screen py-20'>
+        <div className='bg-page center-screen py-20 overflow-x-hidden'>
             <Container>
                 <div>
-                    <div className='text-center mb-20'>
+                    <div className='text-center mb-20 about-top-animation '>
                         <h1 className='text-4xl font-bold mb-5'>درباره من</h1>
                         <h4 className='text-xl'>توسعه دهنده فرانت اند با ۳ سال تجربه به صورت خود اموز</h4>
                     </div>
-                    <div className="grid grid-cols-12 gap-10">
+                    <div className="grid grid-cols-12 gap-y-15 md:gap-20 md:gap-y-20">
 
-                        <AboutBox title="معرفی حرفه ای">
-                            <IntroductionBox />
-                            <ShowMore />
+                        <div className='about-box-style about-right-animation' >
+                            <AboutBox title="معرفی حرفه ای">
+                                <IntroductionBox />
+                                <ShowMore />
 
-                        </AboutBox>
+                            </AboutBox>
+                        </div>
 
-                        <AboutBox title="مهارت های تخصصی">
-                            <>
+                        <div className='about-box-style about-left-animation'>
+                            <AboutBox title="مهارت های تخصصی">
                                 <SkillBox />
                                 <ShowMore />
-                            </>
-                        </AboutBox>
+                            </AboutBox>
+                        </div>
 
-                        <AboutBox title={"سوابق شغلی"}>
-                            <RecordsBox />
+                        <div className='about-box-style about-right-animation'>
+                            <AboutBox title={"سوابق شغلی"}>
+                                <RecordsBox />
 
-                        </AboutBox>
+                            </AboutBox>
+                        </div>
 
                     </div>
                 </div>
