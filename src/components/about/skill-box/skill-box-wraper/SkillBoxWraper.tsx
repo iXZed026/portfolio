@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { IconType } from 'react-icons';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaBootstrap, FaGit, FaGithub } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiRedux } from 'react-icons/si';
+import { SiRedux, SiTypescript } from 'react-icons/si';
 
 
 function SkillBoxWraper({ skills }: { skills: ISkills[] }) {
@@ -26,6 +26,7 @@ function SkillBoxWraper({ skills }: { skills: ISkills[] }) {
             FaGit,
             FaGithub,
             SiRedux,
+            SiTypescript,
         ]
 
         let Icon = icons[Counter];
