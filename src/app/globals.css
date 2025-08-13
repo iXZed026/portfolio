@@ -164,7 +164,7 @@ header {
   animation: heroRightAni 1s ease 1;
 }
 
-.hero-image{
+.hero-image {
   animation: heroLeftAni 1s ease 1;
 }
 
@@ -188,16 +188,37 @@ header {
 }
 
 @keyframes heroRightAni {
-  0%{
-    transform: translate(-20,10);
+  0% {
+    transform: translate(-20, 10);
     opacity: 0
   }
 }
 
 @keyframes heroLeftAni {
-  0%{
+  0% {
     opacity: 0;
     padding: 20%;
+  }
+}
+
+/* ABOUT */
+
+.skill-color {
+  background: var(--gradient);
+}
+
+.visable-box {
+  display: block;
+  animation: visibleBoxAni .75s ease 1;
+}
+
+.hidden-box {
+  display: none
+}
+
+@keyframes visibleBoxAni {
+  0% {
+    opacity: 0;
   }
 }
 

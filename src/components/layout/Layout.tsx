@@ -3,6 +3,9 @@ import React from 'react'
 import NavBar from '../navbar/NavBar'
 import ActiveHumbProvider from '@/context/ActiveHumbProvider'
 import NavBarWrapper from '../navbar/navbar-wrapper/NavBarWrapper'
+import Home from '@/app/page'
+import About from '@/app/about/page'
+import ShowMoreProvider from '@/context/ShowMoreProvider'
 
 function Layout({ children }: ChildrenProps) {
     return (
@@ -12,7 +15,10 @@ function Layout({ children }: ChildrenProps) {
                     <NavBarWrapper />
                 </NavBar>
             </ActiveHumbProvider>
-            {children}
+            <ShowMoreProvider>
+                <Home />
+                <About />
+            </ShowMoreProvider>
         </>
     )
 }
