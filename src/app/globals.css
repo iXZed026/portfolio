@@ -216,9 +216,46 @@ header {
   display: none
 }
 
+.about-right-animation {
+  animation: aboutRighAni 1s ease 1;
+}
+
+.about-left-animation {
+  animation: aboutLeftAni 1s ease 1;
+}
+
+.about-top-animation {
+  animation: aboutTopAni 1s ease 1;
+}
+
 @keyframes visibleBoxAni {
   0% {
     opacity: 0;
+  }
+}
+
+@keyframes aboutRighAni {
+  0% {
+    opacity: 0;
+    transform: translate(-50, 0);
+  }
+}
+
+@keyframes aboutLeftAni {
+  0% {
+    opacity: 0;
+    transform: translate(50, 0);
+  }
+
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes aboutTopAni {
+  0% {
+    opacity: .2;
+    transform: translate(0, 40);
   }
 }
 
@@ -244,6 +281,10 @@ header {
 
   .bg-page {
     @apply min-h-screen w-full bg-gradient-to-br from-gray-900 via-gray-800 to-black;
+  }
+
+  .about-box-style {
+    @apply bg-[var(--bg-gray-color)] p-7 md:p-10 rounded-xl border-[1px] border-gray-500/50 col-span-12 md:col-span-6
   }
 
 }
