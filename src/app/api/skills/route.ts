@@ -17,6 +17,7 @@ const skills: ISkills[] = [
     { id: 8, name: "Git", mastery: 65 },
     { id: 9, name: "Github", mastery: 65 },
     { id: 10, name: "Redux", mastery: 60 },
+    { id: 11, name: "Typescript", mastery: 50 },
 ]
 
 export async function GET() {
