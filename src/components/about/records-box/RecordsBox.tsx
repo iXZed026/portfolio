@@ -8,7 +8,7 @@ function RecordsBox() {
 
     return (
         careerRecords.map((record) => (
-            <div className='border-l-[3px] border-blue-500 py-2 mb-4'>
+            <div key={record.id} className='border-l-[3px] border-blue-500 py-2 mb-4'>
                 <div>
                     <h3 className='text-lg text-[var(--desc-color)] mb-1'>{record.position} - {record.company}</h3>
                     <h4 className='opacity-70 text-sm'>{record.location} | {record.date}</h4>
