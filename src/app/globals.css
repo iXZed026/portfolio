@@ -284,7 +284,7 @@ header {
   }
 
   .about-box-style {
-    @apply bg-[var(--bg-gray-color)] p-7 md:p-10 rounded-xl border-[1px] border-gray-500/50 col-span-12 md:col-span-6
+    @apply bg-[var(--bg-gray-color)] p-7 md:p-10 rounded-xl border-[1px] border-gray-500/50 col-span-12 lg:col-span-6
   }
 
 }

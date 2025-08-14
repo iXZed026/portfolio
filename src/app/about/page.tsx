@@ -15,7 +15,7 @@ function About() {
                         <h1 className='text-4xl font-bold mb-5'>درباره من</h1>
                         <h4 className='text-xl'>توسعه دهنده فرانت اند با ۳ سال تجربه به صورت خود اموز</h4>
                     </div>
-                    <div className="grid grid-cols-12 gap-y-15 md:gap-20 md:gap-y-20">
+                    <div className="grid grid-cols-12 gap-y-15 md:gap-x-10 md:gap-y-20">
 
                         <div className='about-box-style about-right-animation' >
                             <AboutBox title="معرفی حرفه ای">
