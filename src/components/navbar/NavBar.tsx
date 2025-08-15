@@ -10,6 +10,12 @@ function NavBar({ children }: ChildrenProps) {
 
     useEffect(() => {
 
+        if (headerRef.current) {
+            if (window.scrollY > 5) {
+                headerRef.current.className = `${headerStyle} backdrop-blur-md bg-gray-900/50 shadow-lg`
+            }
+        }
+
         function calculateScrollY() {
             if (headerRef.current) {
                 if (window.scrollY > 5) {
