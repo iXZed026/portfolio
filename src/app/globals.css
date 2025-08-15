@@ -259,6 +259,33 @@ header {
   }
 }
 
+/* Projexts */
+
+.project-box:hover {
+  transition: .45s;
+  transform: translate(0, -2);
+}
+
+.project-skill {
+  background-color: #1D3063;
+  color: var(--blue-color2);
+  padding: 4px 13px;
+  border-radius: 10px;
+  font-size: small;
+  font-weight: 400l;
+}
+
+.top-projects-animation {
+  animation: projectsTopAni 1s ease 1;
+}
+
+@keyframes projectsTopAni {
+  0% {
+    opacity: .2;
+    transform: translate(0, 40);
+  }
+}
+
 /* UTILITIES */
 
 @layer utilities {
@@ -285,6 +312,18 @@ header {
 
   .about-box-style {
     @apply bg-[var(--bg-gray-color)] p-7 md:p-10 rounded-xl border-[1px] border-gray-500/50 col-span-12 lg:col-span-6
+  }
+
+  .grid-12 {
+    @apply grid grid-cols-12 gap-y-15 md:gap-x-10 md:gap-y-20
+  }
+
+  .span-2 {
+    @apply col-span-12 lg:col-span-6 
+  }
+
+  .span-3 {
+    @apply col-span-12 lg:col-span-4 md:col-span-6
   }
 
 }
