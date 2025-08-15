@@ -8,6 +8,7 @@ import About from '@/app/about/page'
 import ShowMoreProvider from '@/context/ShowMoreProvider'
 import Projects from '@/app/projects/page'
 import Footer from '../footer/Footer'
+import Contact from '@/app/contact/page'
 
 function Layout({ children }: ChildrenProps) {
     return (
@@ -17,11 +18,12 @@ function Layout({ children }: ChildrenProps) {
                     <NavBarWrapper />
                 </NavBar>
             </ActiveHumbProvider>
+            <Home />
             <ShowMoreProvider>
-                <Home />
                 <About />
-                <Projects />
             </ShowMoreProvider>
+            <Projects />
+            <Contact />
             <Footer />
         </>
     )
