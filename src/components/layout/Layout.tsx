@@ -7,6 +7,7 @@ import Home from '@/app/page'
 import About from '@/app/about/page'
 import ShowMoreProvider from '@/context/ShowMoreProvider'
 import Projects from '@/app/projects/page'
+import Footer from '../footer/Footer'
 
 function Layout({ children }: ChildrenProps) {
     return (
@@ -21,6 +22,7 @@ function Layout({ children }: ChildrenProps) {
                 <About />
                 <Projects />
             </ShowMoreProvider>
+            <Footer />
         </>
     )
 }
