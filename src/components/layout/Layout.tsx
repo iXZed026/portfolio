@@ -1,4 +1,3 @@
-import { ChildrenProps } from '@/types/children'
 import React from 'react'
 import NavBar from '../navbar/NavBar'
 import ActiveHumbProvider from '@/context/ActiveHumbProvider'
@@ -9,8 +8,11 @@ import ShowMoreProvider from '@/context/ShowMoreProvider'
 import Projects from '@/app/projects/page'
 import Footer from '../footer/Footer'
 import Contact from '@/app/contact/page'
+import AboutWraper from '@/app/about/about-wraper/AboutWraper'
+import HomeWraper from '../home-wraper/HomeWraper'
 
-function Layout({ children }: ChildrenProps) {
+function Layout() {
+
     return (
         <>
             <ActiveHumbProvider>
@@ -18,9 +20,13 @@ function Layout({ children }: ChildrenProps) {
                     <NavBarWrapper />
                 </NavBar>
             </ActiveHumbProvider>
-            <Home />
+            <Home>
+                <HomeWraper />
+            </Home>
             <ShowMoreProvider>
-                <About />
+                <About >
+                    <AboutWraper />
+                </About>
             </ShowMoreProvider>
             <Projects />
             <Contact />
