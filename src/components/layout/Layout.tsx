@@ -10,6 +10,7 @@ import Footer from '../footer/Footer'
 import Contact from '@/app/contact/page'
 import AboutWraper from '@/app/about/about-wraper/AboutWraper'
 import HomeWraper from '../home-wraper/HomeWraper'
+import ProjectWraper from '../projects/projects-wraper/ProjectWraper'
 
 function Layout() {
 
@@ -28,7 +29,9 @@ function Layout() {
                     <AboutWraper />
                 </About>
             </ShowMoreProvider>
-            <Projects />
+            <Projects>
+                <ProjectWraper />
+            </Projects>
             <Contact />
             <Footer />
         </>
