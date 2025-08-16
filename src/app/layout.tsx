@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Portfolio",
     images: [
       {
-        url: "/images/next_mart-logo.png",
+        url: "/images/me-logo-og.jpg",
         width: 500,
         height: 500,
         alt: "Danyal Lotfi Banner",
