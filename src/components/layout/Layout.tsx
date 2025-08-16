@@ -11,6 +11,7 @@ import Contact from '@/app/contact/page'
 import AboutWraper from '@/app/about/about-wraper/AboutWraper'
 import HomeWraper from '../home-wraper/HomeWraper'
 import ProjectWraper from '../projects/projects-wraper/ProjectWraper'
+import ContactWraper from '../contact/contact-wraper/ContactWraper'
 
 function Layout() {
 
@@ -32,7 +33,9 @@ function Layout() {
             <Projects>
                 <ProjectWraper />
             </Projects>
-            <Contact />
+            <Contact>
+                <ContactWraper />
+            </Contact>
             <Footer />
         </>
     )
