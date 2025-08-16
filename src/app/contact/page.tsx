@@ -2,7 +2,7 @@
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 import { useScrollIntoView } from '@/hooks/useScrollIntoView';
 import { ChildrenProps } from '@/types/children';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 function Contact({ children }: ChildrenProps) {
 

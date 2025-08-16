@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 export function useIntersectionObserver<T extends HTMLElement>(
     rootMargin = "-300px"

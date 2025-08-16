@@ -2,7 +2,7 @@
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 import { useScrollIntoView } from '@/hooks/useScrollIntoView';
 import { ChildrenProps } from '@/types/children'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 function About({ children }: ChildrenProps) {
 
