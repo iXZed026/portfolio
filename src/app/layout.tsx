@@ -15,15 +15,17 @@ export const metadata: Metadata = {
     description: "This website introduces me to the field of front-end programming.",
     url: process.env.NEXT_PUBLIC_BASE_URL,
     siteName: "Portfolio",
+    type: "website",
     images: [
       {
         url: "/images/me-logo-og.png",
-        width: 500,
-        height: 500,
+        width: 200,
+        height: 200,
         alt: "Danyal Lotfi Banner",
       },
     ],
   }
+
 }
 
 export default function RootLayout({
