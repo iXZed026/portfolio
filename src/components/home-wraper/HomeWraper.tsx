@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { IoLogoGithub } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import Typewriter from '@/components/hero/type-writer/Typewriter';
+import Link from 'next/link';
 
 function HomeWraper() {
     return (
@@ -15,11 +16,13 @@ function HomeWraper() {
                         <h1 className='text-4xl md:text-6xl font-bold'>دانیال لطفی <span className='text-[var(--blue-color2)]'>هستم</span></h1>
                         <Typewriter />
                         <div className='w-full center-screen gap-5 mb-5'>
-                            <button
-                                className='button bg-[var(--blue-color)] w-[160px] h-[52px] hover hover:shadow-md shadow-blue-800'
-                            >
-                                تماس با من
-                            </button>
+                            <Link href="contact">
+                                <button
+                                    className='button bg-[var(--blue-color)] w-[160px] h-[52px] hover hover:shadow-md shadow-blue-800'
+                                >
+                                    تماس با من
+                                </button>
+                            </Link>
                             <a
                                 className='button border-2 border-gray-400/60 w-[160px] h-[52px] hover hover:shadow-md shadow-gray-600 center-screen'
                                 href='/downloads/frontend.pdf'
