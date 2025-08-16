@@ -6,7 +6,7 @@ import { IProjects } from '@/app/api/projects/route';
 
 async function ProjectBox() {
 
-    const res = await fetch("http://localhost:3000/api/projects", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/projects`, {
         cache: 'force-cache',
     });
     let projects;
