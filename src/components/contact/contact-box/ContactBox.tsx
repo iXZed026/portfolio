@@ -14,7 +14,7 @@ function ContactBox({ title, Icon, socialID, href, color }: IContactBox) {
         <a
             href={href}
             target='_blank'
-            className='start-screen gap-5 transition-all hover:bg-gray-700/70 py-3 rounded-lg mb-5 contact-top-animation'>
+            className='start-screen gap-5 transition-all hover:bg-gray-700/70 py-3 rounded-lg mb-5 contact-left-animation'>
             <div className='bg-gray-500/60 rounded-lg p-3'>
                 <Icon style={{ color: color }} className="text-3xl" />
             </div>
