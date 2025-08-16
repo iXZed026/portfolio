@@ -13,7 +13,7 @@ function ContactWraper() {
                     <h1 className='text-4xl font-bold mb-5'>راه‌های ارتباط با من</h1>
                     <h4 className='text-xl'>برای همکاری یا گفتگو می‌توانید از طریق روش‌های زیر با من در ارتباط باشید</h4>
                 </div>
-                <div className='xl:w-[75%] md:w-[90%] w-full p-10 mx-auto grid-12 rounded-lg bg-[var(--bg-gray-color)] border-1 border-gray-600/70'>
+                <div className='xl:w-[75%] md:w-[90%] w-full p-10 mx-auto grid-12 rounded-lg bg-[var(--bg-gray-color)] border-1 border-gray-600/70 contact-bg-animation'>
                     <div className='span-2'>
                         <h3 className='mb-8 text-xl font-semibold'>اطلاعات تماس</h3>
                         <ContactBox
@@ -57,7 +57,7 @@ function ContactWraper() {
                                 color={"cyan"}
                             />
                             <a target='_blank' href="mailto:danyal.titanka24@gmail.com">
-                                <button className='contact-button center-screen gap-3 hover'>
+                                <button className='contact-button center-screen gap-3 hover contact-top-animation'>
                                     <MdEmail className='text-2xl' />
                                     ارسال ایمیل سریع
                                 </button>
