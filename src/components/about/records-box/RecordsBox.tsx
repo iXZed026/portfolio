@@ -1,9 +1,23 @@
-import React from 'react'
+import React from 'react';
+
+interface ICareerRecord {
+    id: number,
+    position: string,
+    company: string,
+    location: string,
+    date: string,
+}
 
 function RecordsBox() {
 
-    const careerRecords = [
-        { id: 1, position: " کاراموز توسعه دهنده فرانت اند", company: "نو اندیشان", location: "میدان ارژانتین", date: "تا 1402/8/24 1402/6/20" }
+    const careerRecords: ICareerRecord[] = [
+        {
+            id: 1,
+            position: " کاراموز توسعه دهنده فرانت اند",
+            company: "نو اندیشان",
+            location: "میدان ارژانتین",
+            date: " 1402/8 تا 1402/11"
+        },
     ]
 
     return (
