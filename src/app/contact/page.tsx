@@ -1,41 +1,28 @@
 "use client"
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+import { useScrollIntoView } from '@/hooks/useScrollIntoView';
 import { ChildrenProps } from '@/types/children';
-import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 
 function Contact({ children }: ChildrenProps) {
 
-    const contactRef = useRef<HTMLDivElement | null>(null);
-    const pathname = usePathname();
+    const { isVisible, refCallback } = useIntersectionObserver();
+    const { pathname, scrollCallback } = useScrollIntoView()
 
-    const [isVisable, setIsVisable] = useState<boolean>(false);
+    const contactRef = useRef<HTMLDivElement | null>(null);
 
 
     useEffect(() => {
-        if (contactRef.current && pathname === "/contact") {
-            contactRef.current.scrollIntoView({ behavior: "smooth" })
-        }
+        refCallback(contactRef.current)
+        scrollCallback(contactRef.current,"/contact")
     }, [pathname]);
 
-    useEffect(() => {
-        if (contactRef.current) {
-            function sectionObserverHandler(entries: any) {
-                const entry = entries[0];
 
-                if (entry.isIntersecting) {
-                    return setIsVisable(true)
-                }
-
-            }
-            new IntersectionObserver(sectionObserverHandler, { rootMargin: "-300px" }).observe(contactRef.current)
-        }
-
-    }, [])
 
     return (
         <div className='bg-page center-screen py-20 overflow-x-hidden' ref={contactRef}>
             {
-                isVisable && children
+                isVisible && children
             }
         </div>
     )
