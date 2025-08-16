@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/me-logo-og.png",
-        width: 200,
-        height: 200,
+        width: 500,
+        height: 500,
         alt: "Danyal Lotfi Banner",
       },
     ],
