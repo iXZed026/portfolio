@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Portfolio | Danyal Lotfi App",
     description: "This website introduces me to the field of front-end programming.",
-    url: process.env.NEXT_PUBLIC_BASE_URL,
     siteName: "Portfolio",
     type: "website",
     images: [
