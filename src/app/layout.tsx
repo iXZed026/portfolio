@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "Portfolio",
     template: "Portfolio | %s"
   },
-  icons: "/images/me-logo.png",
+  icons: "/images/me-logo-og.png",
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"),
   openGraph: {
     title: "Portfolio | Danyal Lotfi App",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     siteName: "Portfolio",
     images: [
       {
-        url: "/images/me-logo-og.jpg",
-        width: 500,
-        height: 500,
+        url: "/images/me-logo-og.png",
+        width: 200,
+        height: 200,
         alt: "Danyal Lotfi Banner",
       },
     ],
