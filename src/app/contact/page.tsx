@@ -24,8 +24,6 @@ function Contact({ children }: ChildrenProps) {
 
                 if (entry.isIntersecting) {
                     return setIsVisable(true)
-                } else {
-                    return setIsVisable(false)
                 }
 
             }
