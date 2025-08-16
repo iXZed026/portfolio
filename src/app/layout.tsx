@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/me-logo-og.png",
+        url: "/images/danyal-animation-logo.png",
         alt: "Danyal Lotfi Banner",
       },
     ],
