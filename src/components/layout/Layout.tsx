@@ -12,8 +12,9 @@ import AboutWraper from '@/app/about/about-wraper/AboutWraper'
 import HomeWraper from '../home-wraper/HomeWraper'
 import ProjectWraper from '../projects/projects-wraper/ProjectWraper'
 import ContactWraper from '../contact/contact-wraper/ContactWraper'
+import { ChildrenProps } from '@/types/children'
 
-function Layout() {
+function Layout({ children }: ChildrenProps) {
 
     return (
         <>
