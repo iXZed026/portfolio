@@ -18,7 +18,7 @@ async function ProjectBox() {
             {
                 projects.map((project: IProjects) => (
                     <div key={project.id} className='projects-left-animation span-3 border-[0.5px] border-gray-600/50 bg-[var(--bg-gray-color)] rounded-lg project-box'>
-                        <div className='mb-4'>
+                        <div className='mb-4 h-[220px]'>
                             <Image
                                 className='w-full rounded-lg'
                                 src={project.image}
