@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 const texts: string[] = [
     "توسعه دهنده فرانت اند",
-    "برنامه نویس NextJs",
+    "برنامه نویس ReactJs",
     "علاقه مند به کار تیمی",
 ];
 
