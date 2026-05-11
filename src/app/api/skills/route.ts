@@ -7,17 +7,17 @@ export interface ISkills {
 }
 
 const skills: ISkills[] = [
-    { id: 1, name: "HTML", mastery: 90 },
-    { id: 2, name: "CSS", mastery: 70 },
-    { id: 3, name: "Javascript", mastery: 70 },
-    { id: 4, name: "Reactjs", mastery: 70 },
-    { id: 5, name: "Nextjs", mastery: 50 },
-    { id: 6, name: "TailwindCSS", mastery: 70 },
-    { id: 7, name: "Bootstrap", mastery: 60 },
-    { id: 8, name: "Git", mastery: 65 },
-    { id: 9, name: "Github", mastery: 65 },
-    { id: 10, name: "Redux", mastery: 60 },
-    { id: 11, name: "Typescript", mastery: 50 },
+    { id: 1, name: "HTML", mastery: 100 },
+    { id: 2, name: "CSS", mastery: 100 },
+    { id: 3, name: "Javascript", mastery: 100 },
+    { id: 4, name: "Reactjs", mastery: 90 },
+    { id: 5, name: "Nextjs", mastery: 90 },
+    { id: 6, name: "TailwindCSS", mastery: 90 },
+    { id: 7, name: "Bootstrap", mastery: 80 },
+    { id: 8, name: "Git", mastery: 100 },
+    { id: 9, name: "Github", mastery: 80 },
+    { id: 10, name: "Redux", mastery: 70 },
+    { id: 11, name: "Typescript", mastery: 90 },
 ]
 
 export async function GET() {
