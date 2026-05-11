@@ -47,10 +47,18 @@ function HomeWraper() {
                     </div>
                 </div>
 
-                <div className='w-full center-screen'>
+                <div className='w-full flex md:justify-end justify-center items-center'>
                     <div className="relative">
                         <Image
-                            className='rounded-full md:w-[300px] w-[230px] hero-image'
+                            className='
+                                rounded-full 
+                                md:w-[300px]
+                                w-[230px] 
+                                hero-image 
+                                bg-[var(--blue-color2)]
+                                border-2
+                                border-[var(--blue-color)]
+                                '
                             src="/images/me.jpg"
                             width={300}
                             height={300}

@@ -197,7 +197,12 @@ header {
 @keyframes heroLeftAni {
   0% {
     opacity: 0;
-    padding: 20%;
+    width: 150px;
+    padding: 5%;
+  }
+  
+  50% {
+    padding: 5%;
   }
 }
 
