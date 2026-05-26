@@ -7,7 +7,7 @@ import { IProjects } from '@/app/api/projects/route';
 async function ProjectBox() {
 
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/projects`, {
-        cache: 'force-cache',
+        next : {revalidate:35000}
     });
     let projects;
 
@@ -18,7 +18,7 @@ async function ProjectBox() {
             {
                 projects.map((project: IProjects) => (
                     <div key={project.id} className='projects-left-animation span-3 border-[0.5px] border-gray-600/50 bg-[var(--bg-gray-color)] rounded-lg project-box'>
-                        <div className='mb-4 h-[220px]'>
+                        <div className='mb-4'>
                             <Image
                                 className='w-full rounded-lg'
                                 src={project.image}

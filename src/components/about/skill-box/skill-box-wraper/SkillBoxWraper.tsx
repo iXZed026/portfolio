@@ -3,7 +3,7 @@ import { ISkills } from '@/app/api/skills/route';
 import { useShowMoreContext } from '@/context/ShowMoreProvider';
 import React, { useEffect, useState } from 'react'
 import { IconType } from 'react-icons';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaBootstrap, FaGit, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaBootstrap, FaGit, FaGithub, FaLinux } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiRedux, SiTypescript } from 'react-icons/si';
 
@@ -22,6 +22,7 @@ function SkillBoxWraper({ skills }: SkillBoxWraperProps) {
             FaHtml5,
             FaCss3,
             FaJs,
+            SiTypescript,
             FaReact,
             RiNextjsFill,
             RiTailwindCssFill,
@@ -29,7 +30,7 @@ function SkillBoxWraper({ skills }: SkillBoxWraperProps) {
             FaGit,
             FaGithub,
             SiRedux,
-            SiTypescript,
+            FaLinux
         ]
 
         const Icon = icons[Counter];

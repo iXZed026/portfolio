@@ -14,7 +14,7 @@ const projects: IProjects[] = [
         id: 1,
         image: "/images/next-mart-demo.png",
         projectName: "NextMart",
-        describtion: "اولین سایت فروشگاهی ساده برای تمرین با NextJs 15 که به زودی قراره redesign بشه.",
+        describtion: "اولین سایت فروشگاهی ساده برای تمرین با NextJs 15",
         technologies: [
             "NextJs",
             "Tailwind"

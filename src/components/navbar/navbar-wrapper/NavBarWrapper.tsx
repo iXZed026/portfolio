@@ -11,12 +11,17 @@ function NavBarWrapper() {
                 <div className="logo z-3">
                     <Link href="/">
                         <Image
-                            className='rounded-full border-2 '
-                            src="/images/me-logo.png"
+                            className='
+                                rounded-full 
+                                bg-[var(--blue-color)] 
+                                border-2 
+                                border-[var(--blue-color2)]
+                            '
+                            src="/images/me-logo-og.png"
                             width={45}
                             height={45}
                             alt='danyal profile'
-                            priority={true}
+                            // priority={true}
                         />
                     </Link>
                 </div>
