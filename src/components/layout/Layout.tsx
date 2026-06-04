@@ -26,7 +26,7 @@ function Layout({ children }: ChildrenProps) {
             <Home>
                 <HomeWraper />
             </Home>
-            <ShowMoreProvider>
+            {/* <ShowMoreProvider>
                 <About >
                     <AboutWraper />
                 </About>
@@ -36,7 +36,7 @@ function Layout({ children }: ChildrenProps) {
             </Projects>
             <Contact>
                 <ContactWraper />
-            </Contact>
+            </Contact> */}
             <Footer />
         </>
     )
